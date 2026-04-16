@@ -5,6 +5,9 @@
 
 DEVICE_PATH := device/amazon/checkers
 
+# BLuetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := checkers
 

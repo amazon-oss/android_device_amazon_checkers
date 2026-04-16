@@ -2,6 +2,9 @@
 ro.hardware.audio.primary=amazon_wrapper
 ro.audiohal.has_get_capture_position=true
 
+# Bluetooth
+persist.bluetooth.enablenewavrcp=false
+
 # Display
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 
