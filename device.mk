@@ -4,6 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Audio
+PRODUCT_PACKAGES += \
+    libalsautils \
+    libaudio-resampler \
+    libaudioutils \
+    libaudioroute \
+    libtinyalsa \
+    libtinycompress \
+    libtinyxml
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
