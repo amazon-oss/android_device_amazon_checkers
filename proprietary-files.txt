@@ -61,3 +61,12 @@ etc/audio_policy_volumes.xml
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
+
+# Thermal
+lib/hw/thermal.mt8163.so
+etc/.tp/thermal.conf
+etc/.tp/thermal.off.conf
+etc/.tp/thermal.policy.conf
+etc/init/init.thermal_mod.rc
+vendor/etc/.tp/thermal.conf
+vendor/etc/.tp/thermal.off.conf
