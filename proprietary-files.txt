@@ -62,6 +62,14 @@ vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
 
+# NVRAM
+vendor/lib/libfile_op.so
+vendor/lib/libnvramagentclient.so
+vendor/lib/libnvram_platform.so
+vendor/lib/libcustom_nvram.so
+vendor/lib/libnvram_daemon_callback.so
+vendor/lib/libnvram.so
+
 # Thermal
 lib/hw/thermal.mt8163.so
 etc/.tp/thermal.conf
