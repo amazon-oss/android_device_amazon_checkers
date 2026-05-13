@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := tablet,nosdcard
+
 # Inherit from mt8163-common
 $(call inherit-product-if-exists, device/amazon/mt8163-common/mt8163-common.mk)
 
