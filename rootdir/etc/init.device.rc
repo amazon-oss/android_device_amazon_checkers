@@ -1,0 +1,53 @@
+on post-fs
+    # Configure pins for mute led brightness
+    write /sys/class/pwm/pwmchip0/export 0
+    write /sys/class/pwm/pwmchip0/pwm0/period 255
+    write /sys/class/pwm/pwmchip0/pwm0/duty_cycle 255
+    write /sys/class/pwm/pwmchip0/pwm0/enable 1
+
+    chmod 0755 /sys/kernel/debug/tracing
+
+on post-fs-data
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsactive
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsdelay
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsbatch
+    chmod 0660 /sys/class/misc/m_alsps_misc/alsflush
+
+    chown system system /sys/class/misc/m_alsps_misc/alsactive
+    chown system system /sys/class/misc/m_alsps_misc/alsdelay
+    chown system system /sys/class/misc/m_alsps_misc/alsbatch
+    chown system system /sys/class/misc/m_alsps_misc/alsflush
+
+    chmod 0660 /sys/class/misc/m_alsps_misc/psactive
+    chmod 0660 /sys/class/misc/m_alsps_misc/psdelay
+    chmod 0660 /sys/class/misc/m_alsps_misc/psbatch
+    chmod 0660 /sys/class/misc/m_alsps_misc/psflush
+
+    chown system system /sys/class/misc/m_alsps_misc/psactive
+    chown system system /sys/class/misc/m_alsps_misc/psdelay
+    chown system system /sys/class/misc/m_alsps_misc/psbatch
+    chown system system /sys/class/misc/m_alsps_misc/psflush
+
+    # Create basic filesystem structure
+    mkdir /data/nvram 0771 root system
+    mkdir /data/nvram/media 0771 media audio
+    copy /fstab.mt8163 /data/nvram/fstab.mt8163
+
+on boot
+    # USB
+    setprop ro.usb.pid.adb 03C8
+    setprop ro.usb.pid.msc.adb 03C6
+    setprop ro.usb.pid.msc 03C5
+    setprop ro.usb.pid.mtp.adb 03C2
+    setprop ro.usb.pid.mtp 0C31
+    setprop ro.usb.pid.ptp.adb 03C4
+    setprop ro.usb.pid.ptp 03C3
+
+    chown bluetooth bluetooth /dev/stpbt
+    chmod 0660 /dev/stpbt
+
+on init
+    # Android JobScheduler idle time in miliseconds. We decide that we're
+    # "idle" if the device has been unused screen off or dreaming
+    # for at least 20 minutes = 1,200,000 ms.
+    setprop persist.sys.jobidletime 1200000

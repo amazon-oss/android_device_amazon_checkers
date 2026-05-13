@@ -10,6 +10,10 @@ PRODUCT_CHARACTERISTICS := tablet,nosdcard
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.device.rc
+
 # Inherit from mt8163-common
 $(call inherit-product-if-exists, device/amazon/mt8163-common/mt8163-common.mk)
 
