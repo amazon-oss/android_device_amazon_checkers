@@ -19,6 +19,9 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3253731328
 # Platform
 TARGET_BOOTLOADER_BOARD_NAME := checkers
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Inherit from mt8163-common
 include device/amazon/mt8163-common/BoardConfigCommon.mk
 
