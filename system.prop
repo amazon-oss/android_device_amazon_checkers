@@ -1,6 +1,9 @@
 # Audio
 ro.audio.monitorRotation=true
 
+# Bluetooth
+ro.rfkilldisabled=1
+
 # Dalvik
 dalvik.vm.heapgrowthlimit=128m
 dalvik.vm.heapsize=256m

@@ -14,6 +14,13 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinyxml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
+PRODUCT_PACKAGES += \
+    mt76x8_bt
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 

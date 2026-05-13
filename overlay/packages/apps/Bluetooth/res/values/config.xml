@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Disable source-side profiles -->
+    <bool name="profile_supported_a2dp">false</bool>
+    <bool name="profile_supported_hs_hfp">false</bool>
+    
+    <!-- Enable sink-side profiles -->
+    <bool name="profile_supported_a2dp_sink">true</bool>
+    <bool name="profile_supported_avrcp_controller">true</bool>
+</resources>
