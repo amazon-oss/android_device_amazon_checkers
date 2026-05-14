@@ -31,6 +31,13 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     init.device.rc
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    mt76x8_wlan
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_SYSTEM)/etc/wifi)
+
 # Inherit from mt8163-common
 $(call inherit-product-if-exists, device/amazon/mt8163-common/mt8163-common.mk)
 

@@ -30,3 +30,6 @@ ro.hwui.text_small_cache_height=256
 ro.hwui.text_small_cache_width=1024
 ro.hwui.texture_cache_flushrate=0.6
 ro.hwui.texture_cache_size=10
+
+# Wi-Fi
+wifi.interface=wlan0

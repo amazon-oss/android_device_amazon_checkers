@@ -25,6 +25,12 @@ TARGET_BOOTLOADER_BOARD_NAME := checkers
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Wi-Fi
+BOARD_WLAN_DEVICE := MediaTek
+BOARD_MEDIATEK_COMBO_CHIP := mt76xx
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mtk
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
+
 # Inherit from mt8163-common
 include device/amazon/mt8163-common/BoardConfigCommon.mk
 
