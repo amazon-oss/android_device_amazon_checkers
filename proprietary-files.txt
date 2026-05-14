@@ -62,6 +62,21 @@ vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
 
+# Firmware
+etc/firmware/SMicBin_rt5518_mode1.dat
+etc/firmware/SMicBin_rt5518_mode2.dat
+etc/firmware/SMicBin_rt5518_mode3.dat
+etc/firmware/SMicBin_rt5518_mode4.dat
+etc/firmware/SMicBin_rt5518_mode5.dat
+etc/firmware/SMicBin_rt5518_mode6.dat
+etc/firmware/gt9xx_fw.bin
+vendor/firmware/EEPROM_MT7668.bin
+vendor/firmware/TxPwrLimit_MT76x8.dat
+vendor/firmware/WIFI_RAM_CODE2_SDIO_MT7668.bin
+vendor/firmware/WIFI_RAM_CODE_MT7668.bin
+vendor/firmware/mt7668_patch_e2_hdr.bin
+vendor/firmware/wifi.cfg
+
 # NVRAM
 vendor/lib/libfile_op.so
 vendor/lib/libnvramagentclient.so
