@@ -4,12 +4,10 @@ ro.audiohal.has_get_capture_position=true
 
 # Bluetooth
 persist.bluetooth.enablenewavrcp=false
+ro.vendor.rfkilldisabled=1
 
 # Display
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
-
-# Bluetooth
-ro.vendor.rfkilldisabled=1
 
 # Sensors
 ro.hardware.sensors=amazon
