@@ -54,6 +54,9 @@ vendor/etc/audio-algorithms/UserEQ.cfg
 vendor/etc/audio-algorithms/VOIPRxParametricEQ.cfg
 vendor/etc/audio-algorithms/VOIPTxParametricEQ.cfg
 
+# Camera (tuning)
+system/vendor/lib/libcameracustom.so
+
 # NVRAM
 vendor/bin/nvram_daemon
 vendor/lib/libcustom_nvram.so

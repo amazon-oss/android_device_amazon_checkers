@@ -5,6 +5,11 @@ ro.audiohal.has_get_capture_position=true
 # Bluetooth
 persist.bluetooth.enablenewavrcp=false
 
+# Camera
+persist.vendor.camera.facing=1
+persist.vendor.camera.orientation=0
+ro.camera.capture_support_level=3
+
 # Display
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 
