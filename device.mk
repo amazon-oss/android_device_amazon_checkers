@@ -80,10 +80,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     suspend_blocker_mt8163
 
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal.policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.policy.conf
-
 # Vendor partition
 TARGET_HAS_VENDOR_PARTITION := false
 

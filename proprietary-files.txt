@@ -73,3 +73,8 @@ system/vendor/firmware/TxPwrLimit_MT76x8.dat:vendor/firmware/TxPwrLimit_MT76x8.d
 system/vendor/firmware/WIFI_RAM_CODE_MT7668.bin:vendor/firmware/WIFI_RAM_CODE_MT7668.bin
 system/vendor/firmware/WIFI_RAM_CODE2_SDIO_MT7668.bin:vendor/firmware/WIFI_RAM_CODE2_SDIO_MT7668.bin
 system/vendor/firmware/wifi.cfg:vendor/firmware/wifi.cfg
+
+# Thermal
+vendor/etc/.tp/thermal.conf
+vendor/etc/.tp/thermal.off.conf
+etc/.tp/thermal.policy.conf:vendor/etc/.tp/thermal.policy.conf
