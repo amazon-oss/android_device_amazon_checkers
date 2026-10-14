@@ -5,7 +5,6 @@ lib/libasp.so
 lib/libaspclient.so
 lib/libsmartvolume.so
 vendor/lib/hw/audio.primary.mt8163.so:vendor/lib/hw/audio.primary_amazon.mt8163.so
-vendor/lib/hw/audio.usb.mt8163.so
 vendor/lib/libaudiocompensationfilter.so
 vendor/lib/libaudiocomponentengine.so
 vendor/lib/libaudiocustparam.so
