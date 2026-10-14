@@ -35,6 +35,7 @@ BOARD_WLAN_DEVICE := MediaTek
 BOARD_MEDIATEK_COMBO_CHIP := mt76xx
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mtk
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_mtk
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit from mt8163-common
 include device/amazon/mt8163-common/BoardConfigCommon.mk

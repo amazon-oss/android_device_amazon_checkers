@@ -18,4 +18,5 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 ro.hardware.sensors=amazon
 
 # Wi-Fi
+ro.vendor.wifi.sap.interface=ap0
 wifi.interface=wlan0
