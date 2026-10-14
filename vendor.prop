@@ -14,6 +14,9 @@ ro.camera.capture_support_level=3
 # Display
 ro.surface_flinger.primary_display_orientation=ORIENTATION_90
 
+# Power
+ro.vendor.power.wall_powered=true
+
 # Sensors
 ro.hardware.sensors=amazon
 
