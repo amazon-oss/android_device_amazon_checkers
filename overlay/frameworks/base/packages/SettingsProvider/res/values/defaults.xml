@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- A2DP source and AVRCP target -->
+    <string name="def_bluetooth_disabled_profiles" translatable="false">8196</string>
+</resources>
